@@ -1,4 +1,45 @@
 .contact{
-    position: absolute;
-    background: $primary-color;
+    background: $decoration-color;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+
+    &-content{
+        margin: 0 30px;
+        padding:40px 20px;
+        height: 580px;
+        margin-top: -150px;
+        background: $primary-color;
+        position: absolute;
+
+        & h2{
+            font-weight: 100;
+            font-size: 2.4rem;
+            margin-bottom: 30px;
+        }
+
+        & #textInput{
+            border-radius: 30px;
+            border: none;
+            background: $decoration-color;
+            width: 100%;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        & #submitInput{
+            border-radius: 30px;
+            border: none;
+            background: $secondary-color;
+            color: $primary-color;
+            padding: 15px;
+            width: 100%;
+            padding: 0 auto;
+            margin: 10px 0;
+        }
+
+        & p{
+            padding-bottom: 50px;
+        }
+    }
 }

@@ -281,8 +281,66 @@
 }
 
 .contact {
-  position: absolute;
+  background: #E6EBEB;
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+}
+.contact-content {
+  margin: 0 30px;
+  padding: 40px 20px;
+  height: 580px;
+  margin-top: -150px;
   background: #FFFFFF;
+  position: absolute;
+}
+.contact-content h2 {
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+}
+.contact-content #textInput {
+  border-radius: 30px;
+  border: none;
+  background: #E6EBEB;
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+}
+.contact-content #submitInput {
+  border-radius: 30px;
+  border: none;
+  background: #212A33;
+  color: #FFFFFF;
+  padding: 15px;
+  width: 100%;
+  padding: 0 auto;
+  margin: 10px 0;
+}
+.contact-content p {
+  padding-bottom: 50px;
+}
+
+.quotes {
+  background: #E6EBEB;
+  padding: 0 25px;
+  padding-top: 500px;
+}
+.quotes h2 {
+  font-size: 1.8rem;
+  font-weight: 100;
+  text-align: center;
+}
+.quotes h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 20px;
+}
+.quotes span {
+  line-height: 1.8;
+}
+.quotes hr {
+  margin: 30px 0;
 }
 
 html {
