@@ -325,6 +325,7 @@
   background: #E6EBEB;
   padding: 0 25px;
   padding-top: 500px;
+  padding-bottom: 1px;
 }
 .quotes h2 {
   font-size: 1.8rem;
@@ -341,6 +342,23 @@
 }
 .quotes hr {
   margin: 30px 0;
+}
+.quotes-profile {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.quotes-profile #pfp {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.quotes-profile__description {
+  align-self: center;
 }
 
 html {
