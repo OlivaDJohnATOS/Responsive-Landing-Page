@@ -1,0 +1,111 @@
+@include media-md{
+    
+}
+
+@include media-lg{
+    .menu-btn{
+        &__burger{
+            visibility: hidden;
+            position: relative;
+        }
+    }
+    .nav{
+        visibility: visible;
+        right: 0;
+        height: 100px;
+
+        .menu-nav{
+            width: 100vw;
+            display: block;
+            transform: translateY(0);
+            height: 100px;
+            background: transparent;
+            text-align: end;
+
+            &__item{
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &__link{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    header{
+        background: $secondary-color;
+        position: fixed;
+        top: 0;
+    }
+    .starter{
+        margin-top: 200px;
+
+        & h1{
+            margin-left: 40px;
+            max-width: 65%;
+            font-size: 4.6rem;
+        }
+
+        &-flexbox{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+
+        .topics-list{
+            align-self: center;
+            justify-items: end;
+            
+            &__item{
+                margin: 0 10px;
+                color: $secondary-color;
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .about{
+        flex-direction: row-reverse;
+        height: 600px;
+
+        &-description{
+            width: 50%;
+
+            & h2{
+                font-size: 4rem;
+            }
+
+            &__btn a{
+                width: 30%;
+            }
+        }
+
+        &-image{
+            width: 45%;
+            left: 0;
+            top: 27%;
+        }
+    }
+    .services{
+        padding-top: 200px; 
+    }
+
+    .unknown{
+        height: 450px;
+        &-list{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .contact{
+        &-content{
+            width: 40%;
+            padding: 80px;
+        }
+    }
+}
+
+@include media-xl{
+    
+}

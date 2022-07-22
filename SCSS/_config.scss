@@ -12,7 +12,21 @@ $decoration-color: #E6EBEB;
     transition: all 0.4s ease-in-out;
 }
 
-
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
 
 @mixin laInmortal{
     border-width: 1px;
