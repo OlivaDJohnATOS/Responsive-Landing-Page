@@ -1,0 +1,19 @@
+$primary-color: #FFFFFF;
+$secondary-color: #212A33;
+$decoration-color: #E6EBEB;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.4s ease-in-out;
+}
+
+@mixin laInmortal{
+    border-width: 1px;
+    border-style: dotted;
+    border-color: red;
+}

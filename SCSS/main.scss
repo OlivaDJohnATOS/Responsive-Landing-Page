@@ -1,0 +1,17 @@
+@import 'config';
+@import 'menu';
+@import 'home';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Helvetica;
+}
+
+header{
+    z-index: 2;
+    width: 100%;
+    padding: 1em;
+}

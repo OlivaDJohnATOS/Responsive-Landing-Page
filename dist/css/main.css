@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 1.8rem;
+  right: 2rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  padding: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+.menu-btn__burger {
+  visibility: visible;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: #212A33;
+  transition: all 0.4s ease-in-out;
+}
+.menu-btn__burger::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 0px;
+  width: 12px;
+  height: 2px;
+  background: #212A33;
+  transition: all 0.4s ease-in-out;
+}
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0px;
+  width: 17px;
+  height: 2px;
+  background: #212A33;
+  transition: all 0.4s ease-in-out;
+}
+.menu-btn__burger.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+  width: 20px;
+}
+.menu-btn__burger.open::after {
+  transform: rotate(-45deg) translate(3px, -7px);
+  width: 20px;
+}
+
+.logo img {
+  margin-top: 1.3rem;
+  margin-left: 1rem;
+  width: 8rem;
+  height: auto;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 100vh;
+  opacity: 1;
+  visibility: hidden;
+}
+.nav.open {
+  visibility: visible;
+}
+.nav .menu-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  list-style-type: none;
+  background: #212A33;
+  transform: translateX(-100%);
+  transition: all 0.4s ease-in-out;
+}
+.nav .menu-nav.open {
+  transform: translateX(0%);
+}
+.nav .menu-nav__link {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.starter {
+  margin: 30px;
+}
+.starter h1 {
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+.starter__btns {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.starter__btn {
+  background: #E6EBEB;
+  padding: 20px 30px;
+  border-radius: 30px;
+  margin: 0 5px;
+}
+.starter__btn.one {
+  background: #212A33;
+}
+.starter__btn.one a {
+  color: #FFFFFF;
+}
+.starter__btn a {
+  text-decoration: none;
+  color: #212A33;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+header {
+  z-index: 2;
+  width: 100%;
+  padding: 1em;
+}/*# sourceMappingURL=main.css.map */
